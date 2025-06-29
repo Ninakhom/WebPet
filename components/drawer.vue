@@ -101,13 +101,13 @@
               <div v-if="managementExpanded && !rail" class="nav-submenu">
                 <!-- Users -->
                 <NuxtLink
-                  to="/users"
+                  to="/user"
                   class="nav-link submenu-link"
-                  @click="setActiveItem('/users')"
+                  @click="setActiveItem('/user')"
                 >
                   <div
                     class="nav-item submenu-item"
-                    :class="{ active: activeItem === '/users' }"
+                    :class="{ active: activeItem === '/user' }"
                   >
                     <div class="nav-icon">
                       <v-icon size="18">mdi-account-group</v-icon>
@@ -115,7 +115,7 @@
                     <span class="nav-text">ຜູ້ໃຊ້ງານ</span>
                     <div class="notification-badge">3</div>
                     <div
-                      v-if="activeItem === '/users'"
+                      v-if="activeItem === '/user'"
                       class="active-indicator"
                     ></div>
                   </div>
@@ -192,9 +192,9 @@
               <div class="rail-submenu-content">
                 <h4 class="rail-submenu-title">ການຈັດການຂໍ້ມູນ</h4>
                 <NuxtLink
-                  to="/users"
+                  to="/user"
                   class="rail-submenu-item"
-                  @click="setActiveItem('/users')"
+                  @click="setActiveItem('/user')"
                 >
                   <v-icon size="16">mdi-account-group</v-icon>
                   <span>ຜູ້ໃຊ້ງານ</span>
@@ -559,7 +559,6 @@
 
 <script setup lang="ts">
 import { ref, onMounted, watch } from "vue";
-import { useRouter, useRoute } from "vue-router";
 
 const router = useRouter();
 const route = useRoute();
