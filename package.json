@@ -1,7 +1,19 @@
 {
   "name": "nuxt-app",
+  "dependencies": {
+    "@mdi/font": "^7.4.47",
+    "@nuxtjs/google-fonts": "3.2.0",
+    "@prisma/client": "^6.10.1",
+    "@prisma/nuxt": "^0.3.0",
+    "nuxt": "^3.17.5",
+    "prisma": "^6.10.1",
+    "sass": "^1.56.0",
+    "vite-plugin-vuetify": "^2.1.1",
+    "vue": "^3.5.17",
+    "vue-router": "^4.5.1",
+    "vuetify": "^3.8.11"
+  },
   "private": true,
-  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -9,13 +21,5 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare"
   },
-  "dependencies": {
-    "@mdi/font": "^7.4.47",
-    "@nuxtjs/google-fonts": "3.2.0",
-    "nuxt": "^3.17.5",
-    "sass": "^1.56.0",
-    "vue": "^3.5.17",
-    "vue-router": "^4.5.1",
-    "vuetify": "^3.8.11"
-  }
+  "type": "module"
 }
